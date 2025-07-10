@@ -3,8 +3,7 @@ defmodule Samly.Mixfile do
 
   @version "1.0.0"
   @description "SAML Single-Sign-On Authentication for Plug/Phoenix Applications"
-  @source_url "https://github.com/handnot2/samly"
-  @blog_url "https://handnot2.github.io/blog/auth/saml-auth-for-phoenix"
+  @source_url "https://github.com/RobotsAndPencils/elixir-aai-samly"
 
   def project() do
     [
@@ -13,7 +12,7 @@ defmodule Samly.Mixfile do
       description: @description,
       docs: docs(),
       package: package(),
-      elixir: "~> 1.6",
+      elixir: "~> 1.18",
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
@@ -47,12 +46,12 @@ defmodule Samly.Mixfile do
 
   defp package() do
     [
-      maintainers: ["handnot2"],
+      name: :rnp_samly,
+      maintainers: ["Robots & Pencils"],
       files: ["config", "lib", "LICENSE", "mix.exs", "README.md"],
       licenses: ["MIT"],
       links: %{
-        "GitHub" => @source_url,
-        "Blog" => @blog_url
+        "GitHub" => @source_url
       }
     ]
   end

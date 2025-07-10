@@ -21,3 +21,8 @@ erl_crash.dump
 .sobelow
 /docs/
 /.elixir_ls/
+
+/.mix_archives
+/.mix_home
+
+/.direnv/
